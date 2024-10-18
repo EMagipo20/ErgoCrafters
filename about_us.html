@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dovit</title>
+    <meta
+      name="description"
+      content="Te ayudamos a mantener una dieta equilibrada con la integración de IA"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/special_styles.css" />
+    <!-- BOOTSTRAP -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+    <!-- BOOTSTRAP ICONS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <!-- FONT AWESOME -->
+    <script
+      src="https://kit.fontawesome.com/9c008fdc7d.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <!-- JAVASCRIPT -->
+  <script
+    src="javascript/finisher-header.es5.min.js"
+    type="text/javascript"
+  ></script>
+
+  <body class="background_animation">
+    <!-- HEADER -->
+    <header>
+      <nav class="navbar-container navbar_transparent">
+        <div class="logo-container">
+          <a href="index.html"
+            ><img class="logo" src="assets/img/marca.png" alt="logo"
+          /></a>
+        </div>
+        <div class="bars">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="index.html"><i class="fa-solid fa-house"></i>Inicio</a>
+            <ul class="nav-sublist">
+              <li class="nav-subitem">
+                <a href="index.html#home"
+                  ><i class="fa-solid fa-brain"></i>| CTA</a
+                >
+              </li>
+              <li class="nav-subitem">
+                <a href="index.html#characteristics"
+                  ><i class="fa-solid fa-code-pull-request"></i>|
+                  Características</a
+                >
+              </li>
+              <li class="nav-subitem">
+                <a href="index.html#targets"
+                  ><i class="fa-solid fa-crosshairs"></i>| Segmentos</a
+                >
+              </li>
+              <li class="nav-subitem">
+                <a href="index.html#testimonials"
+                  ><i class="fa-solid fa-comment-dots"></i>| Testimonios</a
+                >
+              </li>
+              <li class="nav-subitem">
+                <a href="index.html#plans"
+                  ><i class="fa-solid fa-star"></i>| Planes</a
+                >
+              </li>
+              <li class="nav-subitem">
+                <a href="index.html#footer"
+                  ><i class="fa-solid fa-copyright"></i>| Footer</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="about_us.html"
+              ><i class="fa-sharp fa-solid fa-people-group"></i>Nosotros</a
+            >
+            <ul class="nav-sublist">
+              <li class="nav-subitem">
+                <a href="about_us.html#resume"
+                  ><i class="fa-solid fa-circle-info"></i>| Resumen</a
+                >
+              </li>
+              <li class="nav-subitem">
+                <a href="about_us.html#vac"
+                  ><i class="fa-sharp fa-solid fa-scale-balanced"></i>| Valores
+                  y Cultura</a
+                >
+              </li>
+              <li class="nav-subitem">
+                <a href="about_us.html#dev"
+                  ><i class="fa-sharp fa-solid fa-people-group"></i>| Equipo de
+                  Desarrollo</a
+                >
+              </li>
+              <li class="nav-subitem">
+                <a href="about_us.html#footer"
+                  ><i class="fa-solid fa-copyright"></i>| Footer</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html"
+              ><i class="fa-solid fa-envelope-open-text"></i>Contacto</a
+            >
+            <ul class="nav-sublist">
+              <li class="nav-subitem">
+                <a href="contact.html"
+                  ><i class="fa-sharp fa-solid fa-envelope"></i>| Formulario</a
+                >
+              </li>
+              <li class="nav-subitem">
+                <a href="contact.html#socialmedia"
+                  ><i class="fa-brands fa-slack"></i>| Redes Sociales</a
+                >
+              </li>
+              <li class="nav-subitem">
+                <a href="contact.html#footer"
+                  ><i class="fa-solid fa-copyright"></i>| Footer</a
+                >
+              </li>
+            </ul>
+          </li>
+          <div class="login-register">
+            <a href="login.html" class="button_1"
+              ><i class="fa-sharp fa-solid fa-right-to-bracket"></i>Acceder</a
+            >
+            <a href="register.html" class="button_1"
+              ><i class="fa-sharp fa-solid fa-right-to-bracket"></i
+              >Registrarse</a
+            >
+          </div>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="navbar-separator"></div>
+
+      <!-- RESUME -->
+      <section class="section resume grid" id="resume">
+        <div class="resume-text">
+          <div>
+            <h2 class="section_title">¿Cuál es nuetro propósito?</h2>
+            <p>
+              En nuestra plataforma, nos enfocamos en crear soluciones que impulsen 
+              la productividad de los freelancers a través de kits personalizados que 
+              integran confort y estilo. Nuestro propósito es mejorar la calidad de 
+              los espacios de trabajo de aquellos que emprenden de manera independiente, 
+              proporcionando las herramientas adecuadas que les permitan maximizar su 
+              bienestar.
+            </p>
+            <div class="mision__vision">
+              <div class="mision">
+                <h3 class="section_subtitle">Nuestra Misión</h3>
+                <p>
+                  Nos inspira acompañar a los creativos en su viaje, brindándoles
+                  un espacio donde la inspiración y el bienestar se fusionan. En 
+                  ErgoCrafters, creamos entornos personalizados que nutren la 
+                  creatividad, cuidando el cuerpo y la mente para que cada proyecto 
+                  florezca desde un lugar de equilibrio y comodidad.
+                </p>
+              </div>
+              <div class="vision">
+                <h3 class="section_subtitle">Nuestra Visión</h3>
+                <p>
+                  Soñamos con un mundo donde cada freelancer pueda sentirse conectado 
+                  con su espacio de trabajo, un lugar donde las ideas fluyen con libertad 
+                  y el bienestar es parte esencial de cada logro. Nuestra visión es 
+                  convertirnos en el aliado de los creativos que buscan inspiración, 
+                  armonía y éxito en cada rincón de su oficina.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="resume-img">
+          <img src="assets/img/nosotros.jpg" alt="Imagen de nosotros" />
+        </div>
+      </section>
+
+      <!-- VALUES AND CULTURE -->
+      <section class="section vac grid" id="vac">
+        <div class="flex vac-img">
+          <img
+            src="assets/img/empatia.jpg"
+            alt="Error al cargar la imagen 1 de Values and Culture"
+          />
+          <img
+            src="assets/img/inspiracion.jpg"
+            alt="Error al cargar la imagen 2 de Values and Culture"
+          />
+        </div>
+        <div class="flex vac-text">
+          <h2 class="section_title vac__title">Valores y Culturas</h2>
+
+          <div class="vac__item">
+            <h3 class="section_subtitle">Empatia</h3>
+            <p>
+              Entendemos lo que significa crear desde el corazón. 
+              Escuchamos y nos ponemos en el lugar de nuestros 
+              clientes para ofrecer soluciones que realmente 
+              resuenen con su forma de trabajar y vivir.
+            </p>
+          </div>
+          <div class="vac__item">
+            <h3 class="section_subtitle">Inspiracion</h3>
+            <p>
+              Creemos que un entorno adecuado puede desatar el 
+              potencial más profundo. Por eso, diseñamos cada 
+              kit con el propósito de inspirar ideas, motivar 
+              proyectos y transformar espacios en santuarios creativos.
+            </p>
+          </div>
+          <div class="vac__item">
+            <h3 class="section_subtitle">Conexion</h3>
+            <p>
+              Estamos convencidos de que la personalización no 
+              es solo sobre elegir un producto, sino de crear 
+              una conexión genuina con lo que mejor potencia tu 
+              creatividad y bienestar.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- DEVELOPMENT TEAM -->
+      <section class="section dev" id="dev">
+        <div class="heading">
+          <h2 class="section_title">Equipo de Desarrollo</h2>
+        </div>
+        <div class="dev__container">
+          <div class="box">
+            <img
+              class="box-img"
+              src="assets/img/corimaya.jpg"
+              alt="No se pudo cargar la foto de Yanelu"
+            />
+            <h4>"Líder del Proyecto"</h4>
+            <h3>Yanelu Corimanya Chafalote</h3>
+            <p class="box-desc">
+              Mi nombre es Luis, tengo 19 años y fui responsable de liderar y
+              coordinar el equipo de desarrollo, asegurando el cumplimiento de
+              los objetivos y la entrega exitosa del programa.
+            </p>
+          </div>
+          <div class="box">
+            <img
+              class="box-img"
+              src="assets/img/magipo.jpg"
+              alt="No se pudo cargar la foto de Eli"
+            />
+            <h4>"Jefe de Control de Versiones"</h4>
+            <h3>Eli Magipo Ugkuch</h3>
+            <p class="box-desc">
+              Mi nombre es Eli, tengo 20 años recien cumplidos y fui
+              responsable de configurar y gestionar el repositorio de GitHub,
+              asegurando un control de versiones adecuado y un despliegue
+              correcto del programa.
+            </p>
+          </div>
+          <div class="box">
+            <img
+              class="box-img"
+              src="assets/img/farje.jpg"
+              alt="No se pudo cargar la foto de Rodolfo"
+            />
+            <h4>"Analista de datos"</h4>
+            <h3>Rodolfo Farje Vasquez</h3>
+            <p class="box-desc">
+              Mi nombre es Rodolfo, tengo 20 años recién cumplidos y fui
+              responsable de analizar los datos generados por los usuarios
+              del sistema. Me encargué de recopilar, procesar y generar informes
+              que ayudaron a optimizar las funcionalidades de la plataforma, 
+              asegurando una mejor toma de decisiones basada en datos.
+            </p>
+          </div>
+          <div class="box">
+            <img
+              class="box-img"
+              src="assets/img/solano.JPG"
+              alt="No se pudo cargar la foto de Diego"
+            />
+            <h4>"Desarrollador Frontend"</h4>
+            <h3>Diego Solano Tanta</h3>
+            <p class="box-desc">
+              Mi nombre es Diego, tengo 21 años y me encargué de implementar la
+              interfaz de usuario utilizando HTML, CSS y JavaScript, creando una
+              experiencia atractiva y fácil de usar.
+            </p>
+          </div>
+          <div class="box">
+            <img
+              class="box-img"
+              src="assets/img/espino.jpg"
+              alt="No se pudo cargar la foto de Jorge"
+            />
+            <h4>"Diseñador U.X."</h4>
+            <h3>Jorge Espino Aguirre</h3>
+            <p class="box-desc">
+              Mi nombre es Jorge, tengo 20 años y fui responsable de diseñar la
+              experiencia de usuario, asegurando una navegación intuitiva y una
+              interfaz agradable para los usuarios.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- FOOTER -->
+    <footer class="footer" id="footer">
+      <div class="footer-container">
+        <div class="footer-section">
+          <h4>Lenguaje</h4>
+          <select name="language" class="combobox border_hover">
+            <option value="spanish" selected>Español</option>
+            <option value="english">Inglés</option>
+            <option value="russaian">Ruso</option>
+          </select>
+          <br />
+          <h4>Redes Sociales</h4>
+          <div class="footer-social">
+            <ul>
+              <li>
+                <a href="https://facebook.com"
+                  ><i class="bi bi-facebook color_hover"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://twitter.com"
+                  ><i class="bi bi-twitter color_hover"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://instagram.com"
+                  ><i class="bi bi-instagram color_hover"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-section">
+          <div>
+            <a href="#" class="footer-title">
+              <h4 class="color_hover">Inicio</h4>
+            </a>
+            <ul>
+              <li>
+                <a href="index.html#home" class="footer-item color_hover"
+                  >CTA</a
+                >
+              </li>
+              <li>
+                <a
+                  href="index.html#characteristics"
+                  class="footer-item color_hover"
+                  >Características</a
+                >
+              </li>
+              <li>
+                <a href="index.html#targets" class="footer-item color_hover"
+                  >Segmentos</a
+                >
+              </li>
+              <li>
+                <a
+                  href="index.html#testimonials"
+                  class="footer-item color_hover"
+                  >Testimonios</a
+                >
+              </li>
+              <li>
+                <a href="index.html#plans" class="footer-item color_hover"
+                  >Planes</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-section">
+          <div>
+            <a href="#" class="footer-title">
+              <h4 class="color_hover">Nosotros</h4>
+            </a>
+            <ul>
+              <li>
+                <a href="about_us.html#resume" class="footer-item color_hover"
+                  >Resumen</a
+                >
+              </li>
+              <li>
+                <a href="about_us.html#vac" class="footer-item color_hover"
+                  >Valores</a
+                >
+              </li>
+              <li>
+                <a href="about_us.html#dev" class="footer-item color_hover"
+                  >Desarrolladores</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-section">
+          <div>
+            <a href="#" class="footer-title">
+              <h4 class="color_hover">Contacto</h4>
+            </a>
+            <ul>
+              <li>
+                <a
+                  href="contact.html#formcontact"
+                  class="footer-item color_hover"
+                  >Formulario</a
+                >
+              </li>
+              <li>
+                <a
+                  href="contact.html#socialmedia"
+                  class="footer-item color_hover"
+                  >Redes Sociales</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copy">
+        <p>&copy; 2024 ErgoCrafters. Todos los derechos reservados al Grupo 2</p>
+      </div>
+    </footer>
+  </body>
+</html>
+
+<script src="javascript/script.js" type="text/javascript"></script>
