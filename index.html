@@ -146,7 +146,7 @@
       <div class="home-container">
         <div class="home-info">
           <h1 class="section__title">
-            ¡Tranforma tu espacio de trabajo en un entorno productivo y super ergómico!
+            ¡Tranforma tu espacio de trabajo en un entorno productivo y ergómico!
           </h1>
           <p class="home-info_desc">
             ¡Haz una diferencia hoy! Contribuye a proyectos de organizaciones 
@@ -155,17 +155,13 @@
             nosotros y se parte del cambio.
           </p>
           <div class="home-info_buttons">
-            <!-- <a href="#" class="button_2">
+            <a href="" class="button_2" data-bs-toggle="modal" data-bs-target="#infoModal">
               <span></span>
               <span></span>
               <span></span>
               <span></span>
               Más Información
-            </a> -->
-          </div>
-          <div class="home-info_buttons">
-            <img class="download-img" src="assets/img/googlePlayButton.webp" alt="" />
-            <img class="download-img" src="assets/img/appStoreButton.webp" alt="" />
+            </a>
           </div>
         </div>
       </div>
@@ -174,6 +170,50 @@
           <img class="home-img" src="assets/img/freelancer.png" alt="Imagen principal" />
         </div>
       </div>
+
+      <!-- Modal de Más Información -->
+      <div class="modal fade" id="infoModal" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl"> <!-- Modal más amplio -->
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="infoModalLabel">Beneficios de un Espacio de Trabajo Productivo y Ergonómico</h5>
+              <!-- Botón personalizado para cerrar -->
+              <button type="button" class="custom-close" data-bs-dismiss="modal" aria-label="Close">X</button>
+            </div>
+            <div class="modal-body modal-grid"> <!-- Agregamos clase grid -->
+              <!-- Columna del texto -->
+              <div class="modal-text">
+                <p>¿Sabías que el diseño de tu espacio de trabajo puede influir directamente en tu productividad y bienestar?</p>
+      
+                <h6>Los beneficios clave de un espacio bien optimizado:</h6>
+                <ul>
+                  <li><strong>Mayor productividad:</strong> Un entorno organizado y libre de distracciones te permite enfocarte mejor en tus tareas y ser más eficiente.</li>
+                  <li><strong>Mejor salud física:</strong> Un diseño ergonómico reduce los problemas de espalda, cuello y muñecas, ayudando a evitar dolores a largo plazo.</li>
+                  <li><strong>Más energía:</strong> Un espacio bien diseñado, con iluminación adecuada y una postura correcta, reduce la fatiga y aumenta tus niveles de energía.</li>
+                  <li><strong>Mejor bienestar mental:</strong> Un espacio acogedor y personalizado te hará sentir más relajado y motivado para trabajar en tus proyectos.</li>
+                </ul>
+      
+                <p><strong>En Ergocrafters</strong>, creemos que un espacio de trabajo ergonómico no es un lujo, ¡es una necesidad!</p>
+      
+                <h6>¿Por qué deberías mejorar tu espacio de trabajo?</h6>
+                <p>Imagina trabajar en un entorno donde cada detalle está pensado para ti, donde cada elemento está diseñado para mejorar tu confort y maximizar tu creatividad. Al invertir en tu espacio, estás invirtiendo en tu éxito. ¡No subestimes el poder de un buen entorno!</p>
+      
+                <p><strong>Convéncete de que un pequeño cambio puede transformar tu día a día.</strong> Personaliza tu kit hoy mismo y descubre el poder de trabajar en un entorno hecho a tu medida.</p>
+                
+                <!-- Texto adicional -->
+                <p>
+                  Además, un entorno de trabajo optimizado mejora tu enfoque y reduce el tiempo perdido buscando herramientas o lidiando con incomodidades físicas.
+                </p>
+              </div>
+              <!-- Columna de la imagen -->
+              <div class="modal-image">
+                <img src="assets/img/masInfo.png" alt="Freelance Project" class="img-fluid" />
+              </div>
+            </div>
+            <button type="button" class="btn" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>          
     </section>
 
     <!-- CHARACTERISTICS -->

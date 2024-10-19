@@ -575,6 +575,104 @@ main .section:nth-child(6) {
   border-radius: 10px;
 }
 
+.modal-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  gap: 20px;
+  align-items: center;
+}
+
+.modal-content {
+  --bs-modal-bg: #212020;
+  padding: 20px;
+  border: none;
+}
+
+/* Estilo del texto */
+.modal-text h6 {
+  color: #00ff99; /* Verde brillante */
+  margin-bottom: 10px;
+}
+
+.modal-text p, .modal-text ul {
+  color: #f1f1f1;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.modal-image img {
+  border-radius: 10px;
+  max-width: 100%; 
+  height: auto;
+}
+
+.modal-footer .btn {
+  border-color: #00ff99;
+  font-size: 1.1rem;
+  color: white;
+  font-weight: 600;
+  width: 130px;
+  height: 50px;
+}
+
+.modal-header {
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: none;
+  position: relative;
+}
+
+/* Centrar el título */
+.modal-title {
+  color: #ffffff;
+  text-align: center;
+  flex: 1;
+}
+
+.custom-close {
+  background-color: transparent;
+  border: none;
+  color: #00ff99;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.custom-close:hover {
+  color: #00cc77;
+}
+
+.custom-close:focus {
+  outline: none;
+}
+
+.modal-footer .btn:hover {
+  background-color: #cdcecdb4;
+}
+
+.section div {
+  padding: 8px;
+}
+
+@media (max-width: 768px) {
+  .modal-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .modal-image {
+    margin-top: 20px;
+  }
+}
+
 @media (max-width: 1024px) {
   #home {
     margin-top: 0;
