@@ -1780,8 +1780,235 @@ main .section:nth-child(6) {
   margin-bottom: 10px;
 }
 
-/* NUESTRAS REDES SOCIALES */
+/* CHATBOX */
+.chatbox {
+  display: none;
+  width: 350px;
+  height: 500px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  font-family: Arial, sans-serif;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
 
+.chat-header {
+  background-color: #c21c61;
+  color: white;
+  padding: 10px;
+  text-align: left;
+  font-weight: bold;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  position: relative;
+}
+
+.chat-column-left {
+  text-align: center;
+  color: #000;
+}
+
+.close-chatbox {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.chat-body {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Estilo para el scrollbar en el contenedor del chat */
+#chat-body {
+  scrollbar-width: thin; /* Para Firefox */
+  scrollbar-color: #d33d5e #f1f1f1; /* Para Firefox - color del thumb y del track */
+}
+
+#chat-body::-webkit-scrollbar {
+  width: 8px; /* Ancho del scrollbar */
+}
+
+#chat-body::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Color de fondo del track */
+}
+
+#chat-body::-webkit-scrollbar-thumb {
+  background-color: #4CAF50; /* Color del thumb */
+  border-radius: 10px; /* Bordes redondeados */
+  border: 2px solid #f1f1f1; /* Añadir espacio alrededor del thumb */
+}
+
+
+.user-message {
+  background-color: #c21c61;
+  color: white;
+  border-radius: 15px;
+  border-top-right-radius: 0;
+  padding: 10px;
+  margin: 5px 0;
+  font-size: 14px;
+  word-wrap: break-word;
+  text-align: center;
+  align-self: flex-end;
+  margin-left: auto;
+  width: auto;
+  max-width: max-content;
+}
+
+/* Mensaje del bot alineado a la izquierda sin fondo */
+.bot-message {
+  align-self: flex-start;
+  width: 70%;
+  max-width: max-content;
+  align-self: flex-end;
+  padding: 10px;
+  margin: 5px 0;
+  font-size: 14px;
+  color: #333;
+  text-align: left;
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+}
+
+/* Icono del bot al lado izquierdo del mensaje */
+.bot-message::before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  background-image: url('/assets/img/chatbox.png');
+  background-size: cover;
+  border-radius: 50%;
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+
+.bot-message .message-time {
+  font-size: 10px;
+  color: #000000;
+  text-align: left;
+  margin-top: 2px;
+}
+
+.user-message .message-time {
+  font-size: 10px;
+  color: #d1c4e9;
+  text-align: left;
+  margin-top: 2px;
+}
+
+/* Hora alineada a la izquierda para el mensaje del bot */
+.message-time {
+  text-align: left;
+  display: block;
+}
+
+.chat-option {
+  background-color: #c21c61;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  margin: 5px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  display: inline-block;
+  text-align: center;
+}
+
+.chat-option:hover {
+  background-color: #a38b91;
+}
+
+.chat-input-container {
+  display: flex;
+  align-items: center;
+  border-top: 1px solid #ddd;
+  padding: 5px;
+}
+
+#chat-input {
+  padding: 10px;
+  border: none;
+  flex: 1;
+  outline: none;
+}
+
+.send-button {
+  background-color: #c21c61;
+  border: none;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.send-button i {
+  font-size: 18px;
+}
+
+.chat-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #c21c61;
+  color: white;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 28px;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.home-icon {
+  cursor: pointer;
+  margin-right: 10px;
+  font-size: 18px;
+  color: white;
+}
+
+/* Survey styles */
+.survey {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.survey p {
+  font-size: 14px;
+}
+
+.survey-option {
+  background-color: #f1f1f1;
+  border: 1px solid #ddd;
+  color: #333;
+  padding: 5px 10px;
+  margin: 5px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.survey-option:hover {
+  background-color: #be2b58;
+  color: white;
+}
+
+/* NUESTRAS REDES SOCIALES */
 .footer-social ul {
   list-style: none;
   padding: 0;

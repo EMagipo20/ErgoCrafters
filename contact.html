@@ -194,6 +194,42 @@
       <!-- SOCIAL MEDIAS -->
       <section class="section" id="socialmedia"></section>
     </main>
+
+    <!-- Ícono de chat que abre/cierra el chatbox -->
+    <div onclick="toggleChatbox()" class="chat-icon">
+      <i class="fa fa-comments" aria-hidden="true"></i>
+    </div>
+
+    <!-- Chatbox -->
+    <div id="chatbox" class="chatbox">
+      <div class="chat-header" id="chat-header">
+          <span class="header-title">ErgoBot</span>
+          <span onclick="toggleChatbox()" class="close-chatbox">&times;</span>
+      </div>
+      <div class="chat-body" id="chat-body">
+          <!-- Contenido de mensajes y opciones iniciales -->
+          <div id="welcome-message" class="chat-column-left">
+              <img src="/assets/img/chatbox.png" alt="ErgoBot Icon" style="width: 70px; height: 70px; margin-bottom: 10px;">
+              <p>👋 ¡Hola! Soy ErgoBot, tu asistente en ErgoCrafters, ¿Cómo puedo ayudarte hoy?</p>
+          </div>
+
+          <div id="options-container" class="chat-column-right">
+              <button onclick="handleOption('personalizar')" class="chat-option">Ideas para Optimizar mi Espacio</button>
+              <button onclick="handleOption('bienestar')" class="chat-option">Accesorios para Bienestar</button>
+              <button onclick="handleOption('planes')" class="chat-option">Consulta sobre Planes y Precios</button>
+              <button onclick="handleOption('promociones')" class="chat-option">Promociones Actuales</button>
+              <button onclick="handleOption('soporte')" class="chat-option">Soporte y Contacto</button>
+              <button onclick="handleOption('otras')" class="chat-option">Otras Consultas</button>
+          </div>
+      </div>
+      <div class="chat-input-container">
+          <input type="text" id="chat-input" placeholder="Escribe algo..." onkeydown="handleUserInput(event)">
+          <button onclick="sendMessage()" class="send-button">
+              <i class="fa fa-paper-plane" aria-hidden="true"></i>
+          </button>
+      </div>
+    </div>
+
     <!-- FOOTER -->
     <footer class="footer" id="footer">
       <div class="footer-container">
@@ -320,3 +356,5 @@
 </html>
 
 <script src="javascript/script.js" type="text/javascript"></script>
+<script src="javascript/chatbox.js" typt="text/javascript"></script>
+<script src="javascript/messajes.js" tyoe="text/javascript"></script>
